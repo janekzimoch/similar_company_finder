@@ -1,1 +1,1 @@
-hello world
+WebApp to enable sales people find new B2B leads, by searching similar companies to the companies they have sold to.
