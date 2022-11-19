@@ -1,0 +1,56 @@
+
+.global {
+    margin: auto;
+    width: 40%;
+    padding: 5% 10% 5% 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.description {
+    text-align: center;
+    padding: 10% 10% 5% 10%;
+    min-width: 400px;
+}
+
+.input {
+    font-size: large;
+    text-align: center;
+}
+
+.input_box {
+    border:3px solid #747474;
+    border-radius: 8px;
+    border-width: 3px;
+    min-width: 200px;
+    padding: 10px;
+    margin: 8px;
+}
+
+.input_submit {
+    border: none;
+    background-color: #c9c9c9;
+    border-radius: 8px;
+    min-width: 100px;
+    padding: 10px;
+    margin: 4px;
+}
+
+.input_submit:hover {
+    background-color: #dfdfdf;
+  }
+
+.output {
+    padding: 5% 0% 0% 0%;
+}
+
+.output_list {
+    list-style-type: none;
+}
+
+.output_element {
+    padding: 10px;
+    margin: 4px;
+    border: none;
+    border-radius: 8px;
+    background-color: #dfdfdf;
+}
