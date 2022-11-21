@@ -1,11 +1,12 @@
 {% extends "submit_url/layout.html" %}
+{% load static %}
 
 {% block title %}
     Find similar companies
 {% endblock %}
 
 {% block body %}
-  
+
   <div class="description">
     <!-- description of what the website is about -->
     <h2>Welcome to Similar Company Finder</h2>
@@ -18,13 +19,17 @@
 
   <div class="input">
     <!-- input field to submit name of a company -->
-    <form action="{% url 'index' %}" method="post">
+    <form action="{% url 'index' %}" method="post" autocomplete="off">
       {% csrf_token %}
       <label>Enter the name of a company:</label><br>
-      <input class="input_box" type="text" id="input_field" name="input_field" placeholder="i.e. Apple"><br>
+      <div class="input_area">
+        <input class="input_box" type="text" id="input_field" name="input_field" placeholder="i.e. Apple"><br>
+        <ul class="list"></ul>
+      </div>
       <input class="input_submit" type="submit" value="Search">
     </form>
   </div>
+  <ul class="list"></ul>
 
   <div class="output">
     <!-- output field to display list of similar companies -->
@@ -36,5 +41,6 @@
       </ul>
     {% endif %}
   </div>
+  <script src="{% static 'submit_url/autoComplete.js' %}"></script>
 
 {% endblock %}
